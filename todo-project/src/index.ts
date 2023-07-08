@@ -11,5 +11,12 @@ myTodoCollection.addTodo('운동하기');
 
 myTodoCollection.markComplete(3, true);
 
+myTodoCollection.removeComplete();
+
 console.log(`${myTodoCollection.userName}`);
-myTodoCollection.todoItems.forEach((item) => item.printDetails());
+myTodoCollection.getTodoItems(true).forEach(item => item.printDetails());
+console.log('=========================')
+myTodoCollection.getTodoItems(false).forEach(item => item.printDetails());
+
+
+
